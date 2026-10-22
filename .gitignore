@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large raw media. Keep only the dataset configuration and its source notes.
+data/raw/
+data/roboflow/*
+!data/roboflow/data.yaml
+!data/roboflow/README.dataset.txt
+!data/roboflow/README.roboflow.txt
+*.cache
+
+# Model weights and training/runtime outputs
+weights/
+runs/
+outputs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.ckpt
+*.part
+
+# Notebook and runtime caches
+.ipynb_checkpoints/
+*.log
+coverage.xml
+.coverage
